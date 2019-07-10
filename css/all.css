@@ -1,0 +1,283 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.d_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.align_self_center {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.close {
+  height: 0 !important;
+}
+
+.scoreTitle {
+  font-size: 30px;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  border: 4px solid #fff;
+}
+
+.btn {
+  font-size: 36px;
+  font-weight: bold;
+  width: 350px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #000;
+  border: #000;
+  color: #FF9D00;
+  cursor: pointer;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.btn:hover {
+  background-color: #E0E0E0;
+  color: #000;
+  position: relative;
+  top: 2px;
+}
+
+.themePage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  background-color: #FF9D00;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  overflow: hidden;
+}
+
+.startPage .startTitle {
+  padding: 50px;
+}
+
+.startPage .startTitle .titleNumber {
+  font-size: 240px;
+  vertical-align: bottom;
+  color: #fff;
+  text-shadow: 5px 0 1px #000;
+}
+
+.startPage .startTitle .titleString {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+  font-size: 96px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.startPage .startTitle .titleString .operator {
+  font-size: 44px;
+  padding-bottom: 15px;
+  margin-left: 10px;
+  color: #fff;
+  border-bottom: 15px double #fff;
+}
+
+.startPage .startBtn {
+  text-align: center;
+}
+
+.startPage .startBtn p {
+  color: #fff;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.mainPage .mainBlock {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+.mainPage .record {
+  margin-bottom: 100px;
+}
+
+.mainPage .record .scoreRecord {
+  font-size: 40px;
+  color: #FF9D00;
+  font-weight: bold;
+}
+
+.mainPage .record .scoreRecord .recordTitle {
+  padding: 10px;
+  background-color: #fff;
+}
+
+.mainPage .record .scoreRecord .recordNumber {
+  margin-left: 10px;
+  padding: 10px;
+  color: #000;
+}
+
+.mainPage .record .timeSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 96px;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 130px;
+}
+
+.mainPage .question {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 800px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainPage .question .questionSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 600px;
+  font-size: 112px;
+  font-weight: bold;
+}
+
+.mainPage .question .questionSection .number {
+  text-align: center;
+  width: 210px;
+}
+
+.mainPage .question .questionSection .questionOperator {
+  display: inline-block;
+  width: 75px;
+  text-align: center;
+  color: #fff;
+  font-size: 84px;
+}
+
+.mainPage .question .userInput {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 250px;
+  padding: 10px 20px;
+  font-size: 112px;
+  margin-left: auto;
+}
+
+.mainPage .question .userInput::-webkit-outer-spin-button, .mainPage .question .userInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+  margin: 0;
+}
+
+.mainPage .question .textSmall {
+  text-align: center;
+  font-style: italic;
+  font-size: 18px;
+  padding: 5px;
+  color: #fff;
+}
+
+.scorePage .scoreBoard {
+  text-align: center;
+  margin-bottom: 100px;
+  font-weight: bold;
+}
+
+.scorePage .scoreBoard .scoreTitle {
+  margin: 0 auto;
+  width: 70%;
+}
+
+.scorePage .scoreBoard .scoreNotice {
+  font-size: 48px;
+  margin: 20px;
+}
+
+.scorePage .scoreBoard .scoreNotice::before, .scorePage .scoreBoard .scoreNotice::after {
+  content: 'ᅳ';
+  color: #fff;
+}
+
+.scorePage .scoreBoard .scoreNotice::before {
+  margin-right: 10px;
+}
+
+.scorePage .scoreBoard .scoreNotice::after {
+  margin-left: 10px;
+}
+
+.scorePage .scoreBoard .finalScore {
+  font-size: 112px;
+}
+
+.scorePage .restartBtn {
+  text-align: center;
+}
+/*# sourceMappingURL=all.css.map */

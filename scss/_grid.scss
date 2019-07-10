@@ -1,0 +1,45 @@
+@mixin rwd($width) {
+    @media (max-width: $width){
+        @content;
+    }
+}
+@mixin desktop {
+    @media (max-width: 1024px){
+        @content;
+    }
+}
+@mixin pad {
+    @media (max-width:768px){
+        @content;
+    }
+}
+@mixin mobile{
+    @media (max-width: 767px){
+        @content;
+    }
+}
+@mixin iphone_horizontal{
+    @media (max-width: 568px){
+        @content;
+    }
+} 
+@mixin mobile480 {
+    @media (max-width: 480px){
+        @content;
+    }
+}
+@mixin iphone_plus{
+    @media (max-width: 414px){
+        @content;
+    }
+}
+@mixin iphone {
+    @media (max-width: 375px){
+        @content;
+    }
+}
+@mixin iphone5 {
+    @media (max-width: 320px){
+        @content;
+    }
+}

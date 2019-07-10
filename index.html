@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-Hang-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>60 seconds challenge</title>
+  <link rel="stylesheet" href="css/all.css">
+  
+</head>
+<body>
+  <div class="pageControl">
+    <section class="startPage themePage ">
+        <div class="startBlock">
+          <div class="startTitle">
+            <h1 class="d_flex">
+              <div class="titleNumber">60</div>
+              <div class="titleString">
+                <div class="stringWrap">
+                  <p class="d_flex">SECONDS<span  class="operator align_self_center">+−×÷</span></p>
+                  <p>CHALLENGE</p>
+                </div>        
+              </div>
+            </h1>
+          </div>
+          <div class="startBtn">
+            <button type="button" id="start" class="btn" data-page='startPage'>START!</button>
+            <p>try to answer more as you can</p>
+          </div>
+        </div>
+    </section>
+    <section class="mainPage themePage close">
+      <div class="mainBlock">
+          <div class="record d_flex">
+            <div class="scoreSection">
+              <h3 class="scoreTitle">60 SECONDS CHALLENGE</h3>
+              <div class="scoreRecord d_flex">
+                  <div class="recordTitle">SCORE</div>
+                  <div class="recordNumber">000</div>
+              </div>
+            </div>
+            <div class="timeSection">
+              <h3 class="timeLeft">00:00</h3>
+            </div>
+          </div>
+          <div class="question">
+            <h3 class="questionSection">
+              <div class="number">1</div>
+              <div class="questionOperator"> + </div>
+              <div class="number">2</div>
+              <div class="questionOperator">=</div></h3>
+            <div>
+              <input class="userInput" type="number" autofocus>
+              <p class="textSmall">press enter to answer</p>
+            </div>    
+          </div>
+      </div>  
+    </section>
+    <section class="scorePage themePage close">
+      <div class="scoreBlock">
+        <div class="scoreBoard">
+          <div class="scoreTitle">60 SECONDS CHALLENGE</div>
+          <h3 class="scoreNotice">YOUR FINAL SCORE</h3>
+          <div class="finalScore">000</div>
+        </div>
+        <div class="restartBtn">
+          <button class="btn" id="restart">TRY AGAIN!</button>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  <script src="js/all.js"></script>
+</body>
+
+</html>

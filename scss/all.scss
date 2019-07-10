@@ -1,0 +1,190 @@
+@import 'reset';
+
+$themeColor:#FF9D00;
+.d_flex{
+    display: flex;
+}
+.align_self_center{
+    align-self: center;
+}
+
+.close{
+    height: 0 !important;
+}
+.scoreTitle{
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    border: 4px solid #fff;
+}
+.btn{
+    font-size: 36px;
+    font-weight: bold;
+    width: 350px;
+    padding:10px;
+    margin-bottom: 10px;
+    background-color: #000;
+    border: #000;
+    color: $themeColor;
+    cursor: pointer;
+    transition: all 0.4s;
+    &:hover{
+        background-color: #E0E0E0;
+        color: #000;
+        position: relative;
+        top: 2px;
+    }
+}
+.themePage{
+    display: flex;
+    height: 100vh;
+    background-color:$themeColor; 
+    justify-content: center;
+    align-items: center;
+    transition: all 0.8s; 
+    overflow: hidden;
+}
+//main
+.startPage{   
+    .startTitle{
+        padding: 50px;
+        .titleNumber{
+            font-size: 240px;
+            vertical-align: bottom;
+            color: #fff;
+            text-shadow: 5px 0 1px #000;
+        }
+        .titleString{
+            display: flex;
+            font-weight: bold;
+            font-size: 96px;    
+            align-items: flex-end;
+            .operator{
+                font-size: 44px;
+                padding-bottom: 15px;
+                margin-left: 10px;
+                color: #fff;
+                border-bottom: 15px double #fff;
+            }
+        }
+    }
+    .startBtn{
+        text-align: center;
+        p{
+            color: #fff;
+            font-size: 18px;
+            font-style: italic;
+        }
+    }
+}
+
+.mainPage{
+    .mainBlock{
+        flex: 0 0 50%;
+    }
+    .record{
+        margin-bottom: 100px;
+        .scoreRecord{
+            font-size: 40px;
+            color: $themeColor;
+            font-weight: bold;
+            .recordTitle{
+                padding: 10px;
+                background-color: #fff;
+            }
+            .recordNumber{
+                margin-left: 10px;
+                padding: 10px;
+                color: #000;
+            }
+            
+        }
+        .timeSection{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 96px;
+            font-weight: bold;
+            color: #fff;
+            margin-left: 130px;
+        }
+    }   
+    .question{
+        display: flex;
+        width: 800px;
+        align-items: center;
+       .questionSection{
+           display: flex;
+           width: 600px;
+           font-size: 112px;
+           font-weight: bold;
+           .number{
+               text-align: center;
+               width: 210px;
+           }
+           .questionOperator{
+               display: inline-block;
+               width: 75px;
+               text-align: center;
+               color: #fff;
+               font-size: 84px;
+           }
+       }
+       .userInput{
+            box-sizing: border-box;
+            width: 250px;
+            padding:10px 20px;
+            font-size: 112px;
+            margin-left: auto;
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button{
+            appearance: none;
+            margin: 0;
+            }
+        }
+        .textSmall{
+            text-align: center;
+            font-style: italic;
+            font-size: 18px;
+            padding: 5px;
+            color: #fff;
+        }
+    }
+    
+}
+
+.scorePage{
+    .scoreBoard{
+        text-align: center;
+        margin-bottom: 100px;
+        font-weight: bold;
+        .scoreTitle{
+            margin: 0 auto;
+            width: 70%;
+        }
+        .scoreNotice{
+            font-size: 48px;
+            margin: 20px;
+            &::before,
+            &::after{
+                content: 'ᅳ';
+                color:#fff;
+            }
+            &::before{
+                margin-right: 10px;
+            }
+            &::after{
+                margin-left: 10px;
+            }
+        }
+        .finalScore{
+            font-size: 112px;
+        }
+    }
+    
+    .restartBtn{
+        text-align: center;
+    }
+
+}

@@ -1,0 +1,45 @@
+
+/*對毛玻璃的父元素使用 frosted_wrap
+  並對毛玻璃本身使用 frosted
+*/
+@mixin frostedGlass() {
+    .frosted_wrap,.frosted::after{
+        background:url('');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    .frosted_wrap{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .frosted{
+        position: relative;
+        overflow: hidden;
+        &:after{
+            content: '';
+            position: absolute;
+            top:-10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            filter: blur(10px);
+            z-index: -1;
+        }
+    }
+}
+
+/*背景外框*/
+@mixin bg_clip($image) {
+    .bg_clip{
+        border: 1em solid transparent;
+        background: linear-gradient(white, white) padding-box,
+                    url($image) border-box  0/ cover;
+                
+        /* Styling & enable resize*/
+        width: 40rem;
+        padding: 1.5em;
+        overflow: hidden;
+        resize: both;
+    }
+}
