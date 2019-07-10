@@ -11,7 +11,7 @@ class game{
     const timer=setInterval(() =>{
        //歸零時間
       let str; //時間字串
-      if(this.totalTime == 10){
+      if(this.totalTime == 60){
         this.endGame();
         //清除interval
         clearInterval(timer);
@@ -224,7 +224,7 @@ startBtn.addEventListener('click',function(e){
   });
 });
 // restart
-restart.addEventListener('click',function(){
+restart.addEventListener('click',function(e){
   delete newGame;
   e.preventDefault();
   //關閉 scorePage
