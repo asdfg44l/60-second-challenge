@@ -26,8 +26,6 @@ class game{
         this.timeLeft.textContent=str;
       }
     },1000);
-    
-    this.startGame();
   }
    
   //開始遊戲
@@ -153,10 +151,10 @@ class questionMaker{
   };
   //random RANGE number
   getRangeNum(digits){
-  let max=Math.pow(10,digits);
-  let min=Math.pow(10,digits-1);  
-    return Math.floor(Math.random()*(max-min+1)+min)
-  }
+    let max=Math.pow(10,digits)-1;
+    let min=Math.pow(10,digits-1);  
+    return Math.floor(Math.random()*(max-min+1))+min
+  };
 
   //判斷是否為質數
   isPrime(num){
@@ -165,24 +163,22 @@ class questionMaker{
     
     if(num%2==0|num%3==0|num%5==0){return false};
     
-    for(let i=3;i<num/5;i++){
+    for(let i=7;i<=Math.sqrt(num);i++){
       if(num%i ==0){return false}
     }
     return true;
-  }
+  };
 
   //提取出一定範圍內的合數
   getNum(digits){
-    let list=this.range(Math.pow(10,digits-1),Math.pow(10,digits));
-    let Nums=[];
-    for(let i=0;i<list.length;i++){
-      if(!this.isPrime(list[i])){
-        Nums.push(list[i]);
-      }
-    }
-    let num=(list[this.getRandom(list.length)]);  
+    var vm = this;
+    let list=vm.range(Math.pow(10,digits-1),Math.pow(10,digits));
+    let Nums = list.filter(function(num){
+      return !vm.isPrime(num)
+    });
+    let num=Nums[vm.getRandom(Nums.length)];  
     return num;
-  }
+  };
 
   //取出該數的隨機因數
   getRandomFactor(number,digits){
